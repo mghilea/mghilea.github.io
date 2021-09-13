@@ -1,0 +1,311 @@
+html {
+  font-size: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  height: 7vh;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1;
+  height: 5vh;
+  width: 100%;
+  overflow: auto;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover {
+  color: rgb(25, 99, 196);
+  font-family:
+    'Patua One',
+    cursive;
+  font-size: large;
+}
+
+.navbar .nav > li > a {
+  font-family:
+    'Lato',
+    sans-serif;
+  color: rgb(79, 136, 211);
+  text-transform: uppercase;
+}
+
+.navbar .nav > li > a:hover {
+  color: rgb(25, 99, 196);
+  text-shadow: none;
+}
+
+.homepage-grid {
+  display: grid;
+  align-items: center;
+  grid-template-rows: min-content;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .homepage-grid {
+    grid-template-columns: 1;
+    grid-template-areas:
+      'introduction'
+      'profile-photo'
+      'about'
+      'about-photo'
+      'experience'
+      'experience-photo'
+      'skills'
+      'skills-photo'
+      'resume'
+      'contact';
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .homepage-grid {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+      'introduction introduction profile-photo profile-photo profile-photo'
+      'about-photo about-photo about about about'
+      'experience experience experience experience experience-photo'
+      'skills-photo skills-photo skills skills skills'
+      'resume resume resume resume resume'
+      'contact contact contact contact contact';
+  }
+}
+
+#introduction {
+  grid-area: introduction;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  align-items: center;
+}
+
+.text-box {
+  text-align: left;
+  color: black;
+  margin: 5%;
+}
+
+h1 {
+  font-family:
+    'Patua One',
+    cursive;
+  font-size: 5rem;
+}
+
+h2 {
+  font-family:
+    'Patua One',
+    cursive;
+  font-size: 3rem;
+  color: rgb(79, 136, 211);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family:
+    'Lato',
+    sans-serif;
+  font-size: 2rem;
+  color: rgb(79, 136, 211);
+  text-transform: uppercase;
+}
+
+p#description {
+  font-size: 2rem;
+}
+
+p {
+  font-family:
+    'Lato',
+    sans-serif;
+  font-size: 1.75rem;
+}
+
+.dark-blue {
+  color: rgb(25, 99, 196);
+}
+
+.contact-logos {
+  height: 100%;
+}
+
+.contact-logos img {
+  height: 5vh;
+}
+
+.home-photo {
+  grid-area: profile-photo;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+  width: 100%;
+}
+
+#profile-photo {
+  grid-column: 2 / span 6;
+  grid-row: 1;
+  position: relative;
+  height: 97%;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+#home-photo-shadow {
+  grid-row: 1;
+  grid-column: 4 / 11;
+  width: 100%;
+  height: 77%;
+  padding-top: 10%;
+}
+
+#about-photo {
+  grid-area: about-photo;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile-photo-about {
+  position: relative;
+  width: 80%;
+}
+
+#about {
+  grid-area: about;
+  align-items: center;
+  height: 100%;
+}
+
+#experience {
+  grid-area: experience;
+  align-items: center;
+}
+
+#experience-photo {
+  grid-area: experience-photo;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#job-logos {
+  position: relative;
+  width: 99%;
+}
+
+.job-title {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.job-location {
+  font-size: 1.5rem;
+  font-style: italic;
+  text-transform: none;
+}
+
+.job-description {
+  font-size: 1.4rem;
+  font-family:
+    'Lato',
+    sans-serif;
+}
+
+#skills-photo {
+  grid-area: skills-photo;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills-icon {
+  position: relative;
+  width: 50%;
+  padding: 10%;
+}
+
+#skills {
+  grid-area: skills;
+  align-items: center;
+  height: 100%;
+}
+
+#resume {
+  grid-area: resume;
+  align-items: center;
+  height: 100vh;
+}
+
+#resume h2 {
+  margin: 2% 5% 2% 5%;
+  height: 5%;
+}
+
+#contact h2 {
+  margin: 2% 5% 2% 5%;
+  height: 5%;
+}
+
+iframe {
+  width: 100%;
+  height: 80%;
+  padding: 0 10vh 0 10vh;
+  border: 0;
+}
+
+#contact {
+  grid-area: contact;
+  align-items: center;
+  height: 130vh;
+}
+
+#contact #eapps-form-1 {
+  height: 80vh;
+  width: 100%;
+}
+
+table {
+  font-family:
+    'Lato',
+    sans-serif;
+  color: black;
+  width: 100%;
+  line-height: 4vh;
+}
+
+table th {
+  font-size: 2rem;
+  padding: 0 2vh 0 2vh;
+}
+
+table td {
+  font-size: 1.5rem;
+  padding: 0 2vh 0 2vh;
+}
+
+table caption {
+  display: none;
+}
+
+footer {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-left: 1%;
+}

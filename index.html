@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Raluca Ghilea</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Patua+One&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="site.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand">Raluca Ghilea</a>
+                  </div>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a class="menu" href="#about-photo">About me</a></li>
+                    <li><a class="menu" href="#experience">Experience</a></li>
+                    <li><a class="menu" href="#skills-photo">Skills</a></li>
+                    <li><a class="menu" href="#resume">Resume</a></li>
+                    <li><a class="menu" href="#contact"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+                  </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="homepage-grid">
+                <div id="introduction">
+                    <div class="text-box">
+                        <h3>Hello</h3>
+                        <h1>I'm <span class="dark-blue">Raluca Ghilea</span></h1>
+                        <p id="description">Aspiring software engineer</p>
+                        <p>
+                            <a class="contact-logos" href="https://www.linkedin.com/in/ralucaghilea/">
+                                <img src="linkedin.png" alt="LinkedIn Link">
+                            </a>
+                            <a class="contact-logos" href="https://github.com/mghilea">
+                                <img src="github.png" alt="GitHub Link">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="home-photo">
+                    <img id="home-photo-shadow" src="blue_drop.png" alt="Blue Backdrop">
+                    <img id="profile-photo" src="home_photo.png" alt="Photo of Raluca Ghilea">
+                </div>
+                <div id="about-photo">
+                    <img id="profile-photo-about" src="about-photo.png" alt="Photo of Raluca Ghilea">
+                </div>
+                <div id="about">
+                    <div class="text-box">
+                        <h2>Welcome</h2>
+                        <p>Hey there! My name is Raluca and I am a senior Computer Science and Physics 
+                        student at Colgate University in Hamilton, NY. I am an aspiring software engineer 
+                        with internship and research experience in building scalable applications, 
+                        UI design, and machine learning. Originally from Romania 🇷🇴</p>
+                        <p>Welcome to my page! You can navigate to my resume, skills, and experience. 
+                        Please feel free to reach out to me using the contact button or connecting on 
+                        LinkedIn!</p>
+                    </div>
+                </div>
+                <div id="experience">
+                    <div class="text-box">
+                        <h2>Experience</h2>
+                        <p class="job-title">Engineering Summer Analyst Intern - <span class="job-location">Goldman Sachs, New York, NY</span></p>
+                        <p>
+                            <ul class="job-description">
+                                <li>Developed a REST API based microservice deployed on Kubernetes which leverages a relational database to remain truly stateless and enable seamless scalability</li>
+                                <li>Built production-ready code following software design patterns using FastAPI framework in Python</li>
+                                <li>Leveraged GitLab for Continuous Integration/Continuous Deployment (CI/CD) to ensure stability of the microservice</li>
+                                <li>Played crucial role in design discussions, collaborating with the team on evaluating trade-offs and identifying bottlenecks</li>
+                            </ul>
+                        </p>
+                        <p class="job-title">Research Intern - <span class="job-location">Argonne National Laboratory, Lemont, IL</span></p>
+                        <p>
+                            <ul class="job-description">
+                                <li>Developed a Python-based application to streamline the data processing, analysis, and storage of real-time data</li>
+                                <li>Designed the Graphical User Interface using Qt design framework and PyQt5</li>
+                                <li>Led discussions with non-engineers on design features and data analysis functionality such as curve fitting (Levenberg-Marquardt algorithm), fast Fourier transform (FFT), and power spectral density (PSD)</li>
+                                <li>Implemented HDF5 data model to support efficient storage of complex datasets</li>
+                            </ul>
+                        </p>
+                        <p class="job-title">Research Assistant - <span class="job-location">Colgate University, Hamilton, NY</span></p>
+                        <p>
+                            <ul class="job-description">
+                                <li>Developed Feedforward Classification and Regression Neural Networks using Keras and Tensorflow-GPU to identify patterns in complex spectra with an accuracy of 94%</li>
+                                <li>Built genetic algorithm and training datasets using Java to simulate real-life data</li>
+                                <li>Optimized hyperparameters, implemented regularization</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div id="experience-photo">
+                    <img id="job-logos" src="job-logos.png" alt="Goldman Sachs logo, Argonne National Laboratory logo, Colgate University logo">
+                </div>
+                <div id="skills-photo">
+                    <img id="skills-icon" src="skills-icon.png" alt="Software Engineering Icon">
+                </div>
+                <div id="skills">
+                    <h2>Skills</h2>
+                    <table >
+                        <caption>Software Engineering Skills</caption>
+                        <tr class="dark-blue">
+                            <th>Proficient</th>
+                            <th>Experienced</th>
+                            <th>Beginner</th>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>C</td>
+                            <td>C++</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>Linux</td>
+                            <td>Relational Databases (SQL)</td>
+                        </tr>
+                        <tr>
+                            <td>GitHub</td>
+                            <td>Windows</td>
+                            <td>Keras, Tensorflow</td>
+                        </tr>
+                        <tr>
+                            <td>GitLab</td>
+                            <td>REST API (FastAPI)</td>
+                            <td>CI/CD, DevOps lifecycle</td>
+                        </tr>
+                        <tr>
+                            <td>Object-oriented programming</td>
+                            <td>Cloud computing (Kubernetes)</td>
+                        </tr>
+                        <tr>
+                            <td>Numpy, pandas</td>
+                            <td>HTML, CSS</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="resume">
+                    <h2>Resume</h2>
+                    <iframe src="resume.pdf">
+                    </iframe>
+                </div>
+                <div id="contact">
+                    <h2>Contact</h2>
+                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                    <div class="elfsight-app-5bae804e-1987-4f6a-b8b2-0386bb161e4f"></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            Created in September 2021 by Raluca Ghilea
+        </footer>
+    </body>
+</html>
